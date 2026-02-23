@@ -1,0 +1,74 @@
+/* ==========================
+   VARIABLES (SASS)
+   ========================== */
+$rojo: #c8102e;
+$azul: #001f3f;
+$blanco: #ffffff;
+
+/* ==========================
+   MIXIN (SASS)
+   ========================== */
+@mixin flex-centrado {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+body {
+  font-family: 'Arial', sans-serif;
+}
+
+/* ==========================
+   NAVBAR (ANIDACIÓN SASS)
+   ========================== */
+.navbar {
+  background-color: $azul;
+
+  .nav-link {
+    color: $blanco;
+
+    &:hover {
+      color: $rojo;
+    }
+  }
+}
+
+
+.hero {
+  background-color: $rojo;
+  color: $blanco;
+  padding: 80px 0;
+}
+
+/* ==========================
+   CARTAS
+   ========================== */
+.card {
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+.img-redbull {
+  height: 150px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.card {
+  min-height: 320px;
+}
+
+/* ==========================
+   FOOTER (USO DE MIXIN)
+   ========================== */
+.footer {
+  @include flex-centrado;
+  background-color: $azul;
+  color: $blanco;
+  height: 90px;
+}

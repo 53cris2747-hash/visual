@@ -1,0 +1,63 @@
+@charset "UTF-8";
+/* ==========================
+   VARIABLES (SASS)
+   ========================== */
+/* ==========================
+   MIXIN (SASS)
+   ========================== */
+body {
+  font-family: "Arial", sans-serif;
+}
+
+/* ==========================
+   NAVBAR (ANIDACIÓN SASS)
+   ========================== */
+.navbar {
+  background-color: #001f3f;
+}
+.navbar .nav-link {
+  color: #ffffff;
+}
+.navbar .nav-link:hover {
+  color: #c8102e;
+}
+
+.hero {
+  background-color: #c8102e;
+  color: #ffffff;
+  padding: 80px 0;
+}
+
+/* ==========================
+   CARTAS
+   ========================== */
+.card {
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+.card:hover {
+  transform: scale(1.05);
+}
+
+.img-redbull {
+  height: 150px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.card {
+  min-height: 320px;
+}
+
+/* ==========================
+   FOOTER (USO DE MIXIN)
+   ========================== */
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #001f3f;
+  color: #ffffff;
+  height: 90px;
+}/*# sourceMappingURL=estilo.css.map */
